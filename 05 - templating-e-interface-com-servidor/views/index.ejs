@@ -1,0 +1,35 @@
+<section class="page-header">
+  <h2><%= title %></h2>
+  <% if (query && query.success) { %>
+    <div class="alert success">Usuário cadastrado com sucesso!</div>
+  <% } %>
+</section>
+
+<section class="card">
+  <% if (!users || users.length === 0) { %>
+    <p>Nenhum usuário cadastrado ainda. <a href="/users/new">Crie o primeiro cadastro</a>.</p>
+  <% } else { %>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>Idade</th>
+          <th>Função</th>
+          <th>Criado em</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% users.forEach(user => { %>
+          <tr>
+            <td><%= user.name %></td>
+            <td><%= user.email %></td>
+            <td><%= user.age || '-' %></td>
+            <td><%= user.role %></td>
+            <td><%= new Date(user.created_at).toLocaleDateString('pt-BR') %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  <% } %>
+</section>

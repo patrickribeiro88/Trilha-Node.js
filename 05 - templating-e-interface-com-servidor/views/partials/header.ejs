@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="brand">
+    <h1>Controle de Usuários</h1>
+    <p>Gerencie cadastros com EJS e MySQL</p>
+  </div>
+  <nav class="main-nav">
+    <ul>
+      <% if (menuItems && menuItems.length) { %>
+        <% menuItems.forEach(item => { %>
+          <li><a href="<%= item.path %>"><%= item.label %></a></li>
+        <% }) %>
+      <% } %>
+    </ul>
+  </nav>
+</header>

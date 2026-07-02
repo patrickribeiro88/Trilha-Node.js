@@ -1,0 +1,2 @@
+Este é um arquivo de exemplo para o exercício de leitura de arquivo em Node.js.
+Você pode editar este texto e reexecutar o script para ver as mudanças.

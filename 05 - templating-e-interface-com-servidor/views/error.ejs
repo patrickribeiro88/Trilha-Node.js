@@ -1,0 +1,13 @@
+<section class="page-header">
+  <h2><%= title %></h2>
+</section>
+
+<section class="card">
+  <div class="alert error">
+    <p><%= message %></p>
+    <% if (error && error.sqlMessage) { %>
+      <p><strong>Detalhe:</strong> <%= error.sqlMessage %></p>
+    <% } %>
+  </div>
+  <p><a href="/users">Voltar à lista de usuários</a></p>
+</section>

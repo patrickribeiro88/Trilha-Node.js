@@ -1,0 +1,21 @@
+{
+  "name": "aplicacoes-avancadas",
+  "version": "1.0.0",
+  "description": "Projeto de exercícios práticos com Node.js avançado",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "start:socket": "node src/socketServer.js",
+    "start:cluster": "node src/clusterServer.js",
+    "start:child": "node src/childProcess.js",
+    "start:worker": "node src/worker.js",
+    "start:monitor": "node src/backgroundMonitoring.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "pm2": "^5.4.0",
+    "socket.io": "^4.1.6",
+    "winston": "^3.9.0"
+  }
+}

@@ -1,0 +1,43 @@
+<section class="page-header">
+  <h2><%= title %></h2>
+</section>
+
+<section class="card">
+  <% if (errors && errors.length) { %>
+    <div class="alert error">
+      <h3>Foram encontrados erros no formulário:</h3>
+      <ul>
+        <% errors.forEach(error => { %>
+          <li><%= error.msg %></li>
+        <% }) %>
+      </ul>
+    </div>
+  <% } %>
+
+  <form action="/users" method="post" class="form-grid">
+    <label>
+      Nome
+      <input type="text" name="name" value="<%= values.name || '' %>" />
+    </label>
+
+    <label>
+      E-mail
+      <input type="email" name="email" value="<%= values.email || '' %>" />
+    </label>
+
+    <label>
+      Idade
+      <input type="number" name="age" min="1" max="120" value="<%= values.age || '' %>" />
+    </label>
+
+    <label>
+      Função
+      <input type="text" name="role" value="<%= values.role || '' %>" />
+    </label>
+
+    <div class="actions">
+      <button type="submit">Salvar Usuário</button>
+      <a href="/users" class="button secondary">Voltar à lista</a>
+    </div>
+  </form>
+</section>
