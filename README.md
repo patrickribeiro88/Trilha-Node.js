@@ -1,4 +1,4 @@
-# Trilha Node.js - UniSenai
+# Trilha Node.js - UniSENAI
 
 > Projeto acadêmico desenvolvido no curso de Análise e Desenvolvimento de Sistemas da **UNISENAI**.
 
