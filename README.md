@@ -1,4 +1,4 @@
-# Trilha Node.js
+# Trilha Node.js - UniSenai
 
 > Projeto acadêmico desenvolvido no curso de Análise e Desenvolvimento de Sistemas da **UNISENAI**.
 
@@ -60,4 +60,4 @@ Consolidar os conhecimentos em Node.js adquiridos ao longo do curso, aplicando n
 
 ## 👤 Autor
 
-Desenvolvido Patrick Ribeiro
+Patrick Ribeiro Aluno do curso de Análise e Desenvolvimento de Sistemas (ADS) — UniSENAI Joinville
